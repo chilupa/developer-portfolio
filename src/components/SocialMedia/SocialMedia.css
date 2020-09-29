@@ -1,0 +1,12 @@
+.SocialMedia:hover {
+  color: #f48342;
+  cursor: pointer;
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}

@@ -1,5 +1,14 @@
 import React from "react"
+import Layout from "../components/layout"
+import Section from "../components/Section/Section"
 
-export default function Home() {
-  return <div>Hello world!</div>
-}
+const Home = () => (
+  <Layout>
+    <Section pt={2}>
+      I build things. I write articles on Medium, Dev, Stack Overflow and Github
+      pages.
+    </Section>
+  </Layout>
+)
+
+export default Home
