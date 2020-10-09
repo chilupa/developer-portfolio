@@ -4,21 +4,24 @@ import { Link } from "gatsby"
 import CenteredBox from "../CenteredBox/CenteredBox"
 import routes from "../../contants/routes"
 import SocialMedia from "../SocialMedia/SocialMedia"
+import "./Header.css"
 
 const ListLink = ({ to, children }) => (
-  <Typography variant="body2">
-    <Link to={to}>{children}</Link>
-  </Typography>
+  <Link activeClassName="ActiveClass" to={to}>
+    <Typography variant="body1" color="textPrimary">
+      {children}
+    </Typography>
+  </Link>
 )
 
 const Header = () => (
   <Box>
     <Box>
       <Typography align="center" variant="h3">
-        Jon Doe
+        Pavan Chilukuri
       </Typography>
     </Box>
-    <CenteredBox p={2}>
+    <CenteredBox p={3}>
       <SocialMedia />
     </CenteredBox>
     <CenteredBox>
